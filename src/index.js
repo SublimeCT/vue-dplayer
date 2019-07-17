@@ -1,8 +1,9 @@
+import Hls from 'hls.js'
+window.Hls = Hls
+
 import DPlayer from 'dplayer'
 import '../node_modules/dplayer/dist/DPlayer.min.css'
-import Hls from 'hls.js'
 
-window.Hls = Hls
 const VueDPlayer = {
   props: {
     options: {

@@ -1,10 +1,12 @@
 /*!
- * vue-dplayer v0.0.10
+ * vue-dplayer v0.0.11
  * (c) 2017-present sinchang <sinchangwen@gmail.com>
  * Released under the MIT License.
  */
 import DPlayer from 'dplayer';
+import Hls from 'hls.js';
 
+window.Hls = Hls;
 var VueDPlayer = {
   props: {
     options: {

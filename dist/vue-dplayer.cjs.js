@@ -1,5 +1,5 @@
 /*!
- * vue-dplayer v0.0.10
+ * vue-dplayer v0.0.11
  * (c) 2017-present sinchang <sinchangwen@gmail.com>
  * Released under the MIT License.
  */
@@ -8,7 +8,9 @@
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
 var DPlayer = _interopDefault(require('dplayer'));
+var Hls = _interopDefault(require('hls.js'));
 
+window.Hls = Hls;
 var VueDPlayer = {
   props: {
     options: {
